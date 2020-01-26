@@ -1,0 +1,20 @@
+# datasets downloaded
+dataset*
+data
+tmp*
+testing
+
+# node modules
+node_modules
+
+# vscode
+.vscode
+
+# model
+saveModel
+
+#python
+env
+
+# generated
+**/dist

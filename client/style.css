@@ -1,0 +1,13 @@
+#sheet {
+    border:1px solid black;
+}
+
+#draw-canvas {
+    border:1px solid black;
+    /* background-color: black; */
+}
+
+.center-content{
+    display: flex;
+    justify-content:center ;
+}
