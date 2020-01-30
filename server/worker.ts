@@ -1,7 +1,7 @@
 import { LayersModel } from "@tensorflow/tfjs";
 import * as tf from '@tensorflow/tfjs-node';
 import { parentPort } from 'worker_threads';
-import { imageDataToTensor } from "../model/dataset";
+import { imageDataToTensor } from "../model/dataPipeline";
 import { loadModel } from "../model/model";
 import { getCategories, MODEL_PATH } from "../utils/utils";
 

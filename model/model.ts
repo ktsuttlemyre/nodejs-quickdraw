@@ -1,5 +1,5 @@
 import * as tf from '@tensorflow/tfjs-node'
-import { data } from './dataset';
+import { data } from './dataPipeline';
 import { getClasses, IMAGE_H, IMAGE_W, createDirectory } from '../utils/utils';
 import { fileSystem } from '@tensorflow/tfjs-node/dist/io';
 

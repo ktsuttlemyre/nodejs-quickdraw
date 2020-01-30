@@ -3,7 +3,7 @@ import { loadModel } from '../model/model';
 import { MODEL_PATH, getCategories } from '../utils/utils';
 import { LayersModel, data } from '@tensorflow/tfjs-node';
 import * as tf from '@tensorflow/tfjs-node';
-import { imageDataToTensor } from '../model/dataset';
+import { imageDataToTensor } from '../model/dataPipeline';
 
 const wss = new WebSocket.Server({ port: 4000 });
 let model: LayersModel;

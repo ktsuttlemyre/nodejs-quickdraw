@@ -1,5 +1,5 @@
 import * as tf from '@tensorflow/tfjs-node'
-import { dataGenerator, imageDataToTensor } from './dataset'
+import { dataGenerator, imageDataToTensor } from './dataPipeline'
 import { createModel, train, loadModel } from './model'
 import { readFilePromisified } from '../utils/utils';
 
