@@ -6,5 +6,5 @@ export const VALIDATION_SET = 'validation';
 export const TESTING_SET = 'testing'
 const DATASET_FOLDER = [TRAINING_SET, VALIDATION_SET, TESTING_SET] as const;
 export type dataset = typeof DATASET_FOLDER[number];
-export const MODEL_PATH='file:///home/ed/Documents/tfjs-tutorial/quickdraw/saveModelBest/epochbest/model.json';
-export const CATEGORIES_PATH = '/home/ed/Documents/tfjs-tutorial/quickdraw/categories.txt';
+export const MODEL_PATH=`file:///${__dirname}/../saveModelBest/epochbest/model.json`;
+export const CATEGORIES_PATH = `${__dirname}/../categories.txt`;
