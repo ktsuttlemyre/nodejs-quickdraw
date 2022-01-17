@@ -2,6 +2,14 @@
 
 This project is to train a model to recognize drawing.
 
+## Prerequisites
+
+This [page](https://www.npmjs.com/package/canvas) contains the list of prerequisites for canvas
+
+- Ubuntu
+
+        sudo apt-get install build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev
+
 ## Installation
 
     npm install
@@ -15,14 +23,28 @@ Resizing an image in js is faster when using ctx.translate instead of using a se
 
 The script files allowd to download the quickdraw ndjson files, to generate the labels file and to train the model.
 
+### Download the ndjson files
+
+- Download the quickdraw dataset files
+
+    ./script download <number of file to download>
+
+- Generate label types
+
+    ./script create  <training | validation | testing >
+
+- Train the model
+    
+    ./script train
+
 ## See in action
 
 In this repository the model is deployed server side. But in can be possible to deploy it directly in the browser.
 
 ### launch the server
 
-    ts-node server.ts
+    ts-node server/server.ts
 
 ### launch the client
 
-    npx parcel index.html
+    npx parcel client/index.html
