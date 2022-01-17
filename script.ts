@@ -1,4 +1,4 @@
-#!/usr/bin/env ts-node
+#!/usr/bin/env -S npx ts-node
 
 import { training } from './model/train';
 import { dataset } from 'utils';
