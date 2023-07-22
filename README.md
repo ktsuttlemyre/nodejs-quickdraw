@@ -48,3 +48,24 @@ In this repository the model is deployed server side. But in can be possible to 
 ### launch the client
 
     npx parcel client/index.html
+
+
+
+## Run the docker image
+To run source code from disk on docker container
+    ```bash
+    npm run build-wip
+    npm run wip
+    ```
+To create and run a stand alone docker image run 
+    ```bash
+    npm run build-prod
+    npm run prod
+    ```
+To do any local training of the models run 
+    ```bash
+    npm run train
+    ```
+
+### Special Thanks
+ - Kyle Suttlemyre for dockerizing the project
